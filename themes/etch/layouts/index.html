@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{- partial "about.html" . -}}
+<small>{{ .Content }}</small>
+{{- partial "papers.html" . -}}
+{{- partial "presentations.html" . -}}
+{{- partial "awards_grants.html" . -}}
+{{ end }}

@@ -1,0 +1,9 @@
+<h3>Papers</h3>
+<ol id="posts">
+    {{- range where site.RegularPages "Type" "in" site.Params.papers }}
+    <li>
+    <small>{{ .Params.authors}},
+    <b>{{ .Title}}</b></a>, {{ .Params.publication }}, <time>{{ .Date.Format "Jan 2, 2006"}}</time>.<a href="{{ .Params.doi }}" target="_blank"> [doi]</a></small>
+    {{end}}
+    </li>
+</ol>

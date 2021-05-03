@@ -1,0 +1,44 @@
+baseURL = "https://dangom-ya.github.io"
+languageCode = "ja"
+title = "林 靖人 / Yasuhito Hayashi"
+contentDir = "content"
+theme = "etch"
+hasCJKLanguage = true
+dark = "off"
+googleAnalytics = ""
+
+[params]
+  description = "林靖人のページです"
+  copyright = "Yasuhito Hayashi"
+  highlight = true
+  mainSections = ["content"]
+  posts = ["posts"]
+  papers = ["papers"]
+  presentations = ["presentations"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  authors = "authors"
+  doi = "doi"
+  publication = "publication"
+  publication_short = "publication_short"
+  abstract = "abstract"
+  url_pdf = "url_pdf"
+  subtitle = "subtitle"
+  presentation_title = "presentation_title"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    title = "posts"
+    url = "/posts/"
+    weight = 10
+
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true
+
+  [markup.tableOfContents]
+    ordered = true

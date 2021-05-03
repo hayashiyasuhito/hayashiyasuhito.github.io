@@ -1,0 +1,9 @@
+<h3>Presentations</h3>
+<ol id="posts">
+    {{- range where site.RegularPages "Type" "in" site.Params.presentations }}
+    <li>
+    <small>{{ .Params.authors}},
+    <b>{{ .Params.presentation}}</b></a>, {{ .Params.title }}, <time>{{ .Date.Format "Jan 2, 2006" }}</time>.</small>
+    {{end}}
+    </li>
+</ol>

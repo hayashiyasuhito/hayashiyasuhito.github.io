@@ -1,0 +1,12 @@
+<h3>Awards&Grants</h3>
+<ul id="posts">
+    <ol id="posts">
+    {{- range .Site.Data.awards_grants }}
+            <li>
+            <a href="{{ .link }}" target="_blank">
+            <small><b>{{ .Title }}</b>,</a><time>{{ .Date }}</time></small>
+            </li>
+        {{- end }}
+    </ol>
+
+</ul>

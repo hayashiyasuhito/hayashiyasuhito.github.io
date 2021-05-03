@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h3>{{ .Title }}</h3>
+<ul id="posts">
+{{- range .Pages }}
+    {{ .Render "li" }}
+{{- end }}
+
+<h3>{{ .Title }}</h3>
+<ul id="awards_grants">
+{{- range .Pages }}
+    {{ .Render "li" }}
+{{- end }}    
+</ul>
+{{ end }}

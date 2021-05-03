@@ -1,0 +1,8 @@
+<h3>Posts</h3>
+<ul id="posts">
+    <li>
+    {{- range where site.RegularPages "Type" "in" site.Params.posts }}
+        {{ .Render "li" }}
+    {{- end }}
+    </li>
+</ul>
