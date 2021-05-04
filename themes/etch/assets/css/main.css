@@ -59,7 +59,7 @@ header#banner nav ul li a {
 }
 
 main#content a {
-    color: #1785a7;
+    color: #0065c4;
     text-decoration: none;
 }
 
@@ -108,21 +108,27 @@ main#content ul#posts {
     font-size: 16px;
     font-size: 1.6rem;
     margin-top: 0;
-    padding: 0;
+    padding: 0px;
+    margin-left: 20px;
 }
 
 main#content ol#posts {
     font-size: 16px;
     font-size: 1.6rem;
     margin-top: 0;
-    padding: 16px;
+    padding: 0px;
+    margin-left: 20px;
 }
 
 main#content ul#posts li {
     margin: 5px 0;
     padding: 0;
+    
 }
-
+main#content ol#posts li {
+    margin: 2px 0;
+    padding: 0;
+}
 main#content ul#posts small {
     font-size: 0.8em;
     color: #767676;
