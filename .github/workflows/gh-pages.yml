@@ -8,8 +8,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          submodules: true
+        #with:
+          #submodules: true
 
       # https://github.com/marketplace/actions/github-pages-action
       - name: Setup
