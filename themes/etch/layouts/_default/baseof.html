@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
     {{ if not .Site.IsServer }}
-      {{ partial "google-analytics" . }}
+      {{ partial "/google-analytics" . }}
     {{ end }}
     <html>
         {{- partial "head.html" . -}}
