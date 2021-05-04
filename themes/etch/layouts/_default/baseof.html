@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-    {{ if not .Site.IsServer }}
-      {{ partial "/google-analytics" . }}
-    {{ end }}
+
     <html>
+        {{ if not .Site.IsServer }}
+            {{ partial "google-analytics" . }}
+        {{ end }}
         {{- partial "head.html" . -}}
         <body>
             {{- partial "header.html" . -}}
