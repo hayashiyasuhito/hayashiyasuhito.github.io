@@ -1,7 +1,7 @@
 ---
 title: "Myfirstpost"
 date: 2021-05-04T12:31:53+09:00
-draft: true
+draft: false
 isCJKLanguage: true
 tags: [
     "",
